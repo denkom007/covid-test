@@ -1,0 +1,7 @@
+!.gitkeep
+
+# phpstorm project files
+.idea
+
+# composer vendor dir
+/vendor/
