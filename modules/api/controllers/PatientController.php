@@ -92,7 +92,7 @@ class PatientController extends ActiveController
             return $form->errors;
         }
         
-        return null;
+        return [];
     }
     
     /**
@@ -114,7 +114,7 @@ class PatientController extends ActiveController
             
             return $model->errors;
         }
-        
-        return null;
+    
+        return [];
     }
 }
