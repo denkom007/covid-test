@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "428d42b3-daf8-4ac8-965c-ea6122866577",
+		"name": "Patients/List",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26367401"
+	},
+	"item": [
+		{
+			"name": "https://covid-test.kosmonavt.ru/api/patient/list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "qyftGvqeDsWenw2pVFzOlm_7u1OhdwpZ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"page\": 1,\r\n    \"name\": \"Па\",\r\n    \"phone\": null,\r\n    \"polyclinic_id\": 2,\r\n    \"status_id\": 3,\r\n    \"form_disease_id\": null,\r\n    \"treatment_id\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://covid-test.kosmonavt.ru/api/patient/list",
+					"protocol": "https",
+					"host": [
+						"covid-test",
+						"kosmonavt",
+						"ru"
+					],
+					"path": [
+						"api",
+						"patient",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://covid-test.kosmonavt.ru/api/patient/list",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\": 1,\r\n    \"name\": \"Па\",\r\n    \"phone\": null,\r\n    \"polyclinic_id\": 2,\r\n    \"status_id\": 3,\r\n    \"form_disease_id\": null,\r\n    \"treatment_id\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://covid-test.kosmonavt.ru/api/patient/list",
+							"protocol": "https",
+							"host": [
+								"covid-test",
+								"kosmonavt",
+								"ru"
+							],
+							"path": [
+								"api",
+								"patient",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 08:49:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PHPSESSID=agg09dllshii8jcm9v5lnmm0l2; path=/; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_identity=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_csrf=b2-6FwcG0PovmTBR7T-0k1WLeUYghFJf; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Pagination-Total-Count",
+							"value": "24"
+						},
+						{
+							"key": "X-Pagination-Page-Count",
+							"value": "1"
+						},
+						{
+							"key": "X-Pagination-Current-Page",
+							"value": "1"
+						},
+						{
+							"key": "X-Pagination-Per-Page",
+							"value": "100"
+						},
+						{
+							"key": "Link",
+							"value": "<http://covid-test.kosmonavt.ru/api/patient/list?page=1&per-page=100>; rel=self, <http://covid-test.kosmonavt.ru/api/patient/list?page=1&per-page=100>; rel=first, <http://covid-test.kosmonavt.ru/api/patient/list?page=1&per-page=100>; rel=last"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=mu%2FNn%2Byag75Ye25pP0nds%2Fg3Xkj1vJPsZDeuaZj4s42oHBup6N%2FfbT%2BU0ZufoKCewpwlJpKg7%2FNGWgF7KlVLUEP%2F2wam5inJ5uzuIOpzZkFRu92%2B5znf15HqevDgWe8xf2iHhubuvPPaUw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "7a83807da8095a3a-IAD"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"items\": [\n            {\n                \"id\": 43,\n                \"name\": \"Пац\",\n                \"birthday\": \"0000-00-00\",\n                \"phone\": \"79030000000\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"0000-00-00 00:00:00\",\n                \"diagnosis_date\": \"0000-00-00\",\n                \"recovery_date\": \"0000-00-00\"\n            },\n            {\n                \"id\": 34,\n                \"name\": \"Пациент\",\n                \"birthday\": \"2020-05-28\",\n                \"phone\": \"89995675156\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:49:02\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 33,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1973-07-12\",\n                \"phone\": \"89995675156\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:49:18\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 32,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1977-04-04\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:48:07\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 31,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1995-12-22\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:47:56\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 29,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1992-05-28\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:47:41\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 28,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1982-11-25\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:47:24\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 27,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1972-03-01\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:47:07\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 26,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1979-04-22\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:46:55\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 25,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1965-04-15\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:46:41\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 24,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1970-09-19\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:46:28\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 23,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1997-12-27\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:46:14\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 22,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1981-03-18\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:46:01\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 21,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1955-10-31\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:45:48\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 20,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1959-04-12\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:45:31\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 19,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1949-04-27\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:45:17\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 18,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1939-09-21\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:44:58\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 17,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1955-09-10\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:44:43\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 16,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1990-09-05\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:44:32\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 15,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1980-04-18\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:44:19\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 14,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1992-09-06\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 2,\n                    \"name\": \"Средней тяжести\"\n                },\n                \"updated\": \"2020-05-28 18:44:04\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1966-05-21\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:42:48\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1970-05-31\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:41:54\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            },\n            {\n                \"id\": 1,\n                \"name\": \"Пациент\",\n                \"birthday\": \"1971-07-27\",\n                \"phone\": \"\",\n                \"polyclinic\": {\n                    \"id\": 2,\n                    \"name\": \"Поликлиника первая\"\n                },\n                \"status\": {\n                    \"id\": 3,\n                    \"name\": \"Болен\"\n                },\n                \"treatment\": {\n                    \"id\": 2,\n                    \"name\": \"Амбулаторно\"\n                },\n                \"form_disease\": {\n                    \"id\": 1,\n                    \"name\": \"Легкая\"\n                },\n                \"updated\": \"2020-05-28 18:43:16\",\n                \"diagnosis_date\": null,\n                \"recovery_date\": null\n            }\n        ],\n        \"_links\": {\n            \"self\": {\n                \"href\": \"http://covid-test.kosmonavt.ru/api/patient/list?page=1&per-page=100\"\n            },\n            \"first\": {\n                \"href\": \"http://covid-test.kosmonavt.ru/api/patient/list?page=1&per-page=100\"\n            },\n            \"last\": {\n                \"href\": \"http://covid-test.kosmonavt.ru/api/patient/list?page=1&per-page=100\"\n            }\n        },\n        \"_meta\": {\n            \"totalCount\": 24,\n            \"pageCount\": 1,\n            \"currentPage\": 1,\n            \"perPage\": 100\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "https://covid-test.kosmonavt.ru/api/patient/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "qyftGvqeDsWenw2pVFzOlm_7u1OhdwpZ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Пац\", \r\n    \"phone\": \"79030000000\",\r\n    \"polyclinic_id\": 2, \r\n    \"status_id\": 3, \r\n    \"form_disease_id\": 1, \r\n    \"treatment_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://covid-test.kosmonavt.ru/api/patient/create",
+					"protocol": "https",
+					"host": [
+						"covid-test",
+						"kosmonavt",
+						"ru"
+					],
+					"path": [
+						"api",
+						"patient",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://covid-test.kosmonavt.ru/api/patient/create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Пац\", \r\n    \"phone\": \"79030000000\",\r\n    \"polyclinic_id\": 2, \r\n    \"status_id\": 3, \r\n    \"form_disease_id\": 1, \r\n    \"treatment_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://covid-test.kosmonavt.ru/api/patient/create",
+							"protocol": "https",
+							"host": [
+								"covid-test",
+								"kosmonavt",
+								"ru"
+							],
+							"path": [
+								"api",
+								"patient",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 08:45:25 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PHPSESSID=dg84hc9n9oahvns25cbh72vg1u; path=/; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_identity=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_csrf=SZP0zi457E6gTJ9W0M7GuQl4gIVw246M; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=cMvsF4gSxVhbliHaB44C2a27s0rlYubNF4ffVNGxAV9Pi6zuZ%2B%2Bui6b6es2xCHgm2kxFTQ7Y1VhRUIjYHhpeootRltkiXapCz2fbsZsLxnueFk3mP0nQh%2F7gesihmAfvTG2tOkuvVG6Y%2BA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "7a837ae91f67389a-IAD"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"patient_id\": 43\n    }\n}"
+				}
+			]
+		}
+	]
+}
