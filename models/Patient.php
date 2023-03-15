@@ -50,6 +50,7 @@ class Patient extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['name', 'polyclinic_id', 'status_id', 'form_disease_id', 'treatment_id'], 'required'],
             [['birthday', 'created', 'updated', 'diagnosis_date', 'recovery_date', 'analysis_date'], 'safe'],
             [['polyclinic_id', 'treatment_id', 'status_id', 'form_disease_id', 'created_by', 'updated_by', 'source_id'], 'integer'],
             [['name'], 'string', 'max' => 255],
